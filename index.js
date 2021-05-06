@@ -5,7 +5,7 @@ const [ , ,option, secret, nameOrtoken] = process.argv; //los argumentos lo vamo
 //option = verificar o firmar
 
 if( !option || !secret || !nameOrtoken){
-    return console.log('Missing arguments');
+    return console.log('Missing arguments'); //No estan los argumentos
 }
 
 function signToken(payload, secret){ //Firmar JWT
